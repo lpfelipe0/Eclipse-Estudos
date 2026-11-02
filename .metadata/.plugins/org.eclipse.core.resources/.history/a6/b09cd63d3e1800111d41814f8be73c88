@@ -1,0 +1,12 @@
+
+public class Program {
+
+public static void main(String[] args) {
+	System.out.print( "Hello World");
+	System.out.println( "Bom Dia!");
+	System.out.print("Como estás");
+	int y = 32
+			System.out.println (y);
+
+	}
+}

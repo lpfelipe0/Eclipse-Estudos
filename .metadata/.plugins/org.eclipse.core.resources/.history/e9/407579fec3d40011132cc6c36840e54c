@@ -1,0 +1,22 @@
+package nota_ifelse;
+import java.util.Locale;
+import java.util.Scanner;
+public class Main {
+	
+
+
+	public static void main(String[] args) {
+	Locale.setDefault(Locale.US);
+	Scanner sc = new Scanner(System.in);
+	
+
+	}
+	
+	{
+	int x = 5;
+	double y = 2 * x;
+
+	System.out.println(x);
+	System.out.println(y);
+	}
+}
