@@ -2,7 +2,7 @@ package funcoes_string;
 
 public class Main {
 	public static void main(String[] args) {
-		
+		{
 		String original = "abcde FGHIJ ABC abc DEFG 	"; //Cria uma String com o texto original
 		
 		String s01 = original.toLowerCase(); //Converte todo o texto para letras minúsculas
@@ -28,7 +28,31 @@ public class Main {
 						
 	}
 
+//}
+
+String s = "vou escrever um texto em linha reta e o código vai quebrar as linhas"; // Cria uma variável String que armazena uma frase.
+String[] vect = s.split(" "); // Divide a frase em várias partes usando o espaço como separador.
+//Cada palavra é armazenada em uma posição do vetor (array).
+
+System.out.println(vect[0]);
+System.out.println(vect[1]);
+System.out.println(vect[2]);
+System.out.println(vect[3]);
+System.out.println(vect[4]);
+System.out.println(vect[5]);
+System.out.println(vect[6]);
+System.out.println(vect[7]);
+System.out.println(vect[8]);
+System.out.println(vect[9]);
+System.out.println(vect[10]);
+System.out.println(vect[11]);
+System.out.println(vect[12]);
+System.out.println(vect[13]);
+	}
 }
+
+
+
 
 //Isso é um resumo de funções para manipular Strings (textos) na programação. Serve para modificar, cortar, substituir e procurar partes de um texto.
 
