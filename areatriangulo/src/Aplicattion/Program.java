@@ -1,7 +1,19 @@
+/* Resolvendo um problema sem orientação a objetos
+ Fazer um programa para ler as medidas dos lados de dois triangulos X e Y
+ Em seguida mostrar o valor das áreas dos dois triangulos e dizer qual dos 
+ dois lados possui a maior area.
+  
+ A formula para calcular a área de um triangulo a partir das medidas de seus lados
+ a, b e c é a formula de Heron:
+  
+ area = raiz quadrada de p(p-a)(p-b)(p-c) onde p = a+b+c/2.
+ */
 package Aplicattion;
 
 import java.util.Locale;
 import java.util.Scanner;
+
+import entidades.Triangulo;
 
 public class Program {
 
@@ -10,23 +22,23 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		double xA, xB, xC, yA, yB, yC;
+		Triangulo x, y;
+		x = new Triangulo();
+		y = new Triangulo();
 		
 		System.out.println("Entre com as medidas do Triangulo X: ");
-		xA = sc.nextDouble();
-		xB = sc.nextDouble();
-		xC = sc.nextDouble();
+		x.a = sc.nextDouble();
+		x.b = sc.nextDouble();
+		x.c = sc.nextDouble();
 		
 		System.out.println("Entre com as medidas do Triangulo Y: ");
-		yA = sc.nextDouble();
-		yB = sc.nextDouble();
-		yC = sc.nextDouble();
+		y.a = sc.nextDouble();
+		y.b = sc.nextDouble();
+		y.c = sc.nextDouble();
 		
-		double p = (xA + xB + xC) / 2.0;
-		double areaX = Math.sqrt(p * (p - xA) * (p - xB) * (p - xC));
+		double areaX = x.area();
 		
-		p = (yA + yB + yC) / 2.0;
-		double areaY = Math.sqrt(p * (p - yA) * (p - yB) * (p - yC));
+		double areaY = y.area();
 		
 		System.out.printf("Area do triangulo X: %.4f%n", areaX);
 		System.out.printf("Area do triangulo Y: %.4f%n", areaY);
