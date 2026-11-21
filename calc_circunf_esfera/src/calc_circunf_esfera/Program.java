@@ -13,17 +13,16 @@ public class Program {
 
 		Locale.setDefault(Locale.US);	
 		Scanner sc = new Scanner(System.in);
-		Calculador calc = new Calculador();
-
+		
 		System.out.print("Entre com o raio ");
 		double raio = sc.nextDouble();
 
-		double c = calc.circunferencia(raio);
-		double v = calc.volume(raio);
+		double c = Calculador.circunferencia(raio);
+		double v = Calculador.volume(raio);
 
 		System.out.printf("Circunferencia: %.2f%n", c);
 		System.out.printf("Volume: %.2f%n", v);
-		System.out.printf("Valor do PI : %.2f%n", calc.PI);
+		System.out.printf("Valor do PI : %.2f%n", Calculador.PI);
 
 		sc.close();
 	}
